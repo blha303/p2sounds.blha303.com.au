@@ -1,0 +1,20 @@
+{
+  "1": {"views": "3785", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "19", "who": "Haunted Fortress 2", "id": "1", "folder": "holiday/gamestartup_halloween", "valveid": "gamestartup_halloween"},
+  "2": {"views": "5461", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "11", "who": "TF2 Saxxy 2011 Theme", "id": "2", "folder": "holiday/gamestartup_saxxy", "valveid": "gamestartup_saxxy"},
+  "3": {"views": "14730", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "209", "who": "Team Fortress 2", "id": "3", "folder": "gamestartup1", "valveid": "gamestartup1"},
+  "4": {"views": "5196", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "48", "who": "Playing With Danger", "id": "4", "folder": "gamestartup2", "valveid": "gamestartup2"},
+  "5": {"views": "13023", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "213", "who": "Rocket Jump Waltz", "id": "5", "folder": "gamestartup3", "valveid": "gamestartup3"},
+  "6": {"views": "4262", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "40", "who": "The Art of War", "id": "6", "folder": "gamestartup4", "valveid": "gamestartup4"},
+  "7": {"views": "4419", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "60", "who": "Faster Than a Speeding Bullet", "id": "7", "folder": "gamestartup5", "valveid": "gamestartup5"},
+  "8": {"views": "3671", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "22", "who": "Petite Chou-Fleur", "id": "8", "folder": "gamestartup6", "valveid": "gamestartup6"},
+  "9": {"views": "6529", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "54", "who": "Right Behind You", "id": "9", "folder": "gamestartup7", "valveid": "gamestartup7"},
+  "10": {"views": "6724", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "35", "who": "Intruder Alert", "id": "10", "folder": "gamestartup8", "valveid": "gamestartup8"},
+  "11": {"views": "3818", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "17", "who": "Drunken Pipe Bomb", "id": "11", "folder": "gamestartup9", "valveid": "gamestartup9"},
+  "12": {"views": "11342", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "94", "who": "More Gun", "id": "12", "folder": "gamestartup10", "valveid": "gamestartup10"},
+  "13": {"views": "8995", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "38", "who": "A Little Heart to Heart", "id": "13", "folder": "gamestartup11", "valveid": "gamestartup11"},
+  "14": {"views": "14722", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "180", "who": "MEDIC!", "id": "14", "folder": "gamestartup12", "valveid": "gamestartup12"},
+  "15": {"views": "4534", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "65", "who": "Archimedes", "id": "15", "folder": "gamestartup13", "valveid": "gamestartup13"},
+  "16": {"views": "4132", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "35", "who": "Dreams of Cruelty", "id": "16", "folder": "gamestartup14", "valveid": "gamestartup14"},
+  "17": {"views": "3758", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "40", "who": "The Calm", "id": "17", "folder": "gamestartup15", "valveid": "gamestartup15"},
+  "18": {"views": "4549", "text": "[[5,\"Team Fortress 2 Menu Music\"]]", "downs": "33", "who": "ROBOTS!", "id": "18", "folder": "gamestartup16", "valveid": "gamestartup16"}
+}
