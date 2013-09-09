@@ -15,18 +15,22 @@ if (count($arr) <= 2 && $arr[1] == "") {
         $matches = array();
         foreach($data as $item) {
             if (strpos($arr[2], "music") !== false) {
-                if (strpos($item["who"], $term) === 0) {
+                if (strpos($item["who"], $term) !== false) {
                     $matches[] = $item["id"];
                 }
             } else {
-                if (strpos($item["text"], $term) === 0) {
+                if (strpos($item["text"], $term) !== false) {
                     $matches[] = $item["id"];
                 }
             }
         }
         $out = array();
         foreach($matches as $match) {
-            $id = intval($match) - 1;
+            if (strpos($arr[2], "portal2music") !== false) {
+                $id = intval($match) - 15;
+            } else {
+                $id = intval($match) - 1;
+            }
             if (array_key_exists($id, $data)) {
                 $out[] = $data[$id];
             }
