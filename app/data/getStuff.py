@@ -1,12 +1,12 @@
 import urllib2, json, sys, time
 portal2 = ["http://www.portal2sounds.com/", 2654]
-portal2dlc1 = [portal2url.replace("www", "dlc"), 207]
-portal2dlc2 = [portal2url.replace("www", "dlc2"), 81]
-portal2music = [portal2url.replace("www", "p2music"), 244]
-portal1 = [portal2url.replace("www", "p1"), 406]
-portal1music = [portal2url.replace("www", "p1music"), 13]
+portal2dlc1 = [portal2[0].replace("www", "dlc"), 207]
+portal2dlc2 = [portal2[0].replace("www", "dlc2"), 81]
+portal2music = [portal2[0].replace("www", "p2music"), 244]
+portal1 = [portal2[0].replace("www", "p1"), 406]
+portal1music = [portal2[0].replace("www", "p1music"), 13]
 tf2 = ["http://www.tf2sounds.com/", 2681]
-tf2music = [tf2url.replace("www", "music"), 18]
+tf2music = [tf2[0].replace("www", "music"), 18]
 ua_chrome = 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.4 (KHTML, ' \
             'like Gecko) Chrome/22.0.1229.79 Safari/537.4'
 
