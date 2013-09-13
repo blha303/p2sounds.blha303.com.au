@@ -1,4 +1,28 @@
 <?php
+if (isset($_GET['format'])) {
+    if ($_GET['format'] == "json") {
+        $json = true;
+        $xml = false;
+    } else {
+        $xml = true;
+        $json = false;
+    }
+} else if (strpos($accept, "application/json") !== false) {
+    $json = true;
+    $xml = false;
+} else {
+    $xml = true;
+    $json = false;
+}
+
+if ($_SERVER['REQUEST_METHOD'] != "GET") {
+    header($_SERVER["SERVER_PROTOCOL"]." 405 Method Not Allowed");
+    if ($json) {
+        die(json_encode(array("error" => "Only GET requests are supported at this time.")));
+    } else if ($xml) {
+        die("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<p2sounds>\n    <error>Only GET requests are supported at this time.</error>\n</p2sounds>");
+    }
+}
 if (strpos($_SERVER['REQUEST_URI'], "?") !== false) {
     $_SERVER['REQUEST_URI'] = substr($_SERVER['REQUEST_URI'], 0, strpos($_SERVER['REQUEST_URI'], "?"));
 }
@@ -90,21 +114,6 @@ foreach (apache_request_headers() as $header => $value) {
     }
 }
 
-if (isset($_GET['format'])) {
-    if ($_GET['format'] == "json") {
-        $json = true;
-        $xml = false;
-    } else {
-        $xml = true;
-        $json = false;
-    }
-} else if (strpos($accept, "application/json") !== false) {
-    $json = true;
-    $xml = false;
-} else {
-    $xml = true;
-    $json = false;
-}
 if ($json) {
     header('Content-type: application/json');
     echo $out;
@@ -132,5 +141,4 @@ if ($json) {
     } else {
         echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<p2sounds>\n    <error>Couldn't get XML object. Please notify blha303 http://twitter.com/blha303</error>\n</p2sounds>";
     }
-    
 }
