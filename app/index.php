@@ -15,7 +15,10 @@ if (isset($_GET['format'])) {
     $json = false;
 }
 
-if ($_SERVER['REQUEST_METHOD'] != "GET") {
+if ($_SERVER['REQUEST_METHOD'] == "OPTIONS") {
+    header("access-control-allow-methods: GET");
+    die();
+} else if ($_SERVER['REQUEST_METHOD'] != "GET") {
     header($_SERVER["SERVER_PROTOCOL"]." 405 Method Not Allowed");
     if ($json) {
         die(json_encode(array("error" => "Only GET requests are supported at this time.")));
