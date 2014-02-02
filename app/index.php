@@ -35,7 +35,8 @@ if (count($arr) <= 2 && $arr[1] == "") {
     $out = json_encode(array("error" => "No request provided.",
                              "source" => "https://github.com/blha303/p2sounds.blha303.com.au",
                              "JSON" => "Add ?format=json to the end of urls, or set Accept header to application/json",
-                             "XML" => "Add ?format=xml to the end of urls, or set Accept header to text/xml"));
+                             "XML" => "Add ?format=xml to the end of urls, or set Accept header to text/xml",
+                             "usage" => "https://github.com/blha303/p2sounds.blha303.com.au/blob/master/README.md"));
     header($_SERVER["SERVER_PROTOCOL"]." 400 No Request Provided");
 } else if ($arr[1] == "") {
     $out = json_encode(array("error" => "No game provided."));
