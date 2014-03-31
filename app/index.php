@@ -1,4 +1,11 @@
 <?php
+foreach (apache_request_headers() as $header => $value) {
+    if ($header == "Accept") {
+        $accept = $value;
+    }
+}
+
+
 if (isset($_GET['format'])) {
     if ($_GET['format'] == "json") {
         $json = true;
@@ -109,12 +116,6 @@ if (count($arr) <= 2 && $arr[1] == "") {
     } else {
         $out = json_encode(array("error" => "No such game."));
         header($_SERVER["SERVER_PROTOCOL"]." 404 No Such Game");
-    }
-}
-
-foreach (apache_request_headers() as $header => $value) {
-    if ($header == "Accept") {
-        $accept = $value;
     }
 }
 
